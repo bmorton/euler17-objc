@@ -27,7 +27,7 @@
 		D35235AB13187D1500520B1E /* euler17 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = euler17; sourceTree = BUILT_PRODUCTS_DIR; };
 		D35235AF13187D1500520B1E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D35235B213187D1500520B1E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D35235B513187D1500520B1E /* euler17-Prefix.pch */ = {isa = PBXFileReference; path = "euler17-Prefix.pch"; sourceTree = "<group>"; };
+		D35235B513187D1500520B1E /* euler17-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "euler17-Prefix.pch"; sourceTree = "<group>"; };
 		D35235B613187D1500520B1E /* euler17.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = euler17.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
