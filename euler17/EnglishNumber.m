@@ -35,18 +35,24 @@
 
 -(void)setNumber:(int)myNumber {
     number = myNumber;
+    
+    // When the number updates, we want to force the string to update too
     [self updateString];
 }
 
 -(void)updateString {
+    // Set the string to the number's word representation
     self.string = [formatter stringFromNumber:[NSNumber numberWithInt:number]];
 }
 
 -(NSUInteger)numberOfLetters {
+    // We are going to replace all instances of spaces and dashes to find out how many are contained in
+    // our string.  We'll then take the string length and subtract the spaces and dashes.
     NSMutableString *tempString = [[NSMutableString alloc] initWithString:string];
     NSUInteger spaces = [tempString replaceOccurrencesOfString:@" " withString:@"" options:NSLiteralSearch range:NSMakeRange(0, [tempString length])];
     NSUInteger dashes = [tempString replaceOccurrencesOfString:@"-" withString:@"" options:NSLiteralSearch range:NSMakeRange(0, [tempString length])];
     [tempString release];
+    
     return ([string length] - spaces - dashes);
 }
 
